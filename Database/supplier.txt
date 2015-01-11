@@ -1,0 +1,9 @@
+Mckoi Database
+Tabel supplier
+
+berisi semua id dan nama supplier yang tersimpan
+
+attribute :
+
+idSupp   varchar(3) PRIMARY KEY
+namaSupp varchar(100)

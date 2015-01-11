@@ -1,0 +1,18 @@
+Mckoi Database
+Tabel Transaksi
+
+berisi semua record transaksi penjualan oleh user.
+
+menyimpan id transaksi, tanggal transaksi, id produk, nama produk, 
+jumlah barang dibeli, dan total harga
+
+tabel Transaksi digunakan oleh class Penjualan (untuk save data),
+			   dan class Laporan (untuk admin memindai transaksi)
+attribute :
+
+idTrans   varchar(3) PRIMARY KEY
+tglTrans  varchar(10)
+id  	  varchar(6) FOREIGN KEY references product(id)
+nama      varchar(100)
+jumlah    int
+total	  int

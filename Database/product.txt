@@ -1,0 +1,16 @@
+Mckoi Database
+Tabel product
+
+berisi semua id, nama product, nama supplier, harga, dan stock produk yang tersimpan
+
+Tabel product digunakan dalam class Product(tanpa select stock),  
+			      class StockBarang(tanpa select harga),
+			      dan class Penjualan(untuk menampilkan produk yang dijual)
+
+attribute :
+
+id       varchar(6) PRIMARY KEY
+nama     varchar(100)
+idSupp   varchar(3) FOREIGN KEY references supplier(idSupp)
+harga	 int
+stock	 int
